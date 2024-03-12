@@ -1,0 +1,736 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Madimi One', sans-serif;
+  scroll-behavior: smooth;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  min-height: 100svh;
+}
+
+:root {
+  /* FONTS */
+  --rtc-primary-font: 'Work Sans', sans-serif;
+
+  /* BRANDING COLORS */
+  --rtc-color-1: #f9faff;
+  --rtc-color-2: #b6b6b6;
+  --rtc-color-3: #4a4a4a;
+  --rtc-color-4: #003f62;
+  --rtc-special-color-1: #a3fcb1;
+  --rtc-special-color-2: #fcc3a3;
+  --rtc-special-color-3: #a3f7fc;
+  --rtc-special-color-4: #fca3a3;
+  --rtc-special-color-5: #f5e6ff;
+  --rtc-special-color-6: #7be498;
+  --rtc-special-color-7: #f7c29b;
+
+  /* BACKGROUND-COLORS */
+  --rtc-primary-bg: var(--rtc-color-1);
+
+  /* TEXT-COLORS */
+  --rtc-primary-text: var(--rtc-color-3);
+  --rtc-secondary-text: var(--rtc-color-4);
+
+  /* BORDER-COLORS */
+  --rtc-primary-border: 1px solid var(--rtc-color-2);
+
+  /* BORDER RADIUS */
+  --rtc-br: 8px;
+  --rtc-br-medium: 1rem;
+
+  /* SPACINGS */
+  --rtc-margin-xs: 10px;
+  --rtc-margin-s: 20px;
+  --rtc-margin-m: 30px;
+  --rtc-margin-l: 40px;
+  --rtc-margin-xl: 50px;
+  --rtc-margin-section: 100px;
+
+  --rtc-padding-xs: 10px;
+  --rtc-padding-s: 20px;
+  --rtc-padding-m: 30px;
+  --rtc-padding-l: 40px;
+  --rtc-padding-xl: 50px;
+
+  --rtc-gap-xs: 10px;
+  --rtc-gap-s: 20px;
+  --rtc-gap-m: 30px;
+  --rtc-gap-l: 40px;
+  --rtc-gap-xl: 50px;
+}
+
+body {
+  min-height: 100svh;
+}
+header {
+  background: url(./assets/img/throes\ copia.jpg) top / 100% 202px;
+  height: 202px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-position: 0px 37.8rem;
+}
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+#main-logo {
+  object-fit: cover;
+  height: 40%;
+  width: 25.1%;
+  margin-left: 1rem;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+.none {
+  display: none;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.flex-container-column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#container-selector {
+  background: url('https://c.wallhere.com/photos/5c/ea/1920x1080_px_Direwolf_Game_Of_Thrones_House_Stark_Sigils_Winter_Is_Coming-562516.jpg!d');
+  background-size: fill;
+  background-position: -204rem -157%;
+  padding: var(--rtc-padding-s);
+  height: fit-content;
+  gap: var(--rtc-gap-s);
+  color: white;
+}
+#container-selector > h2 {
+  text-shadow: 17px 1px 10px black;
+  font-size: 3rem;
+  color: #de0404;
+  text-align: center;
+  font-weight: 700;
+}
+#container-selector > div h2 {
+  text-shadow: 17px 1px 10px black;
+  font-size: 2.4rem;
+  color: #de0404;
+  font-weight: 900;
+  min-width: 140px;
+}
+#container-selector > button {
+  padding: var(--rtc-padding-xs) var(--rtc-padding-m);
+  font-weight: 600;
+  border-radius: var(--rtc-br);
+
+  background-color: var(--rtc-color-3);
+  border: none;
+  cursor: pointer;
+  transform-origin: left top;
+  transition: all 0.2s;
+  color: var(--rtc-color-1);
+}
+#container-selector > button:hover {
+  background-color: var(--rtc-color-2);
+}
+#container-selector > button:active {
+  transition: 0s;
+  background-color: var(--rtc-color-3);
+}
+#container-selector > div {
+  width: 100%;
+}
+#container-selector > div > select {
+  width: 25%;
+  height: 40px;
+}
+#info-all-Characters {
+  padding-top: var(--rtc-padding-xs);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--rtc-gap-l);
+  background-color: #4a4a4a;
+}
+#info-all-Characters > div {
+  position: relative;
+  width: 400px;
+  color: antiquewhite;
+  gap: var(--rtc-gap-xs);
+}
+#info-all-Characters > div:first-of-type:hover {
+  box-shadow: 2px -1px 35px -5px rgba(0, 0, 0, 0.75);
+}
+#info-all-Characters > div > div {
+  width: 100%;
+  overflow: hidden;
+}
+#info-all-Characters > div > div > img {
+  width: 100%;
+  object-fit: cover;
+  height: 400px;
+  filter: saturate(110%);
+  transition: all 1s ease-in-out;
+}
+#info-all-Characters > div > div > img:hover {
+  transform: scale(1.1);
+  filter: brightness(110%) contrast(110%);
+}
+#input-search {
+  align-items: center;
+  gap: var(--rtc-gap-xs);
+}
+#input-search > input {
+  height: 40px;
+  border-radius: var(--rtc-br);
+}
+#input-search > button {
+  padding: var(--rtc-padding-xs) var(--rtc-padding-s);
+  border: none;
+  cursor: pointer;
+  border-radius: var(--rtc-br-medium);
+  transition: all 0.2s ease-in-out;
+  background-color: var(--rtc-color-3);
+  color: var(--rtc-color-1);
+}
+
+#input-search > button:hover {
+  background-color: var(--rtc-color-2);
+}
+#input-search > button:active {
+  background-color: var(--rtc-color-3);
+}
+#info-all-Characters > div:nth-child(24) > div > img,
+#info-all-Characters > div:nth-child(9) > div > img {
+  object-position: 50% 5%;
+}
+#info-all-Characters > div:nth-child(51) > div > img {
+  object-position: 50% 30%;
+}
+#info-all-Characters > div:nth-child(27) > div > img,
+#info-all-Characters > div:nth-child(6) > div > img,
+#info-all-Characters > div:nth-child(1) > div > img,
+#info-all-Characters > div:nth-child(4) > div > img,
+#info-all-Characters > div:nth-child(5) > div > img,
+#info-all-Characters > div:nth-child(3) > div > img,
+#info-all-Characters > div:nth-child(22) > div > img,
+#info-all-Characters > div:nth-child(37) > div > img,
+#info-all-Characters > div:nth-child(52) > div > img,
+#info-all-Characters > div:nth-child(2) > div > img {
+  object-position: 50% 15%;
+}
+#info-all-Characters > div:nth-child(8) > div > img {
+  object-position: 50% 5%;
+}
+#info-all-Characters > div:nth-child(23) > div > img,
+#info-all-Characters > div:nth-child(17) > div > img {
+  object-position: 50% 30%;
+}
+
+#info-all-Characters > div:nth-child(38) > div > img,
+#info-all-Characters > div:nth-child(10) > div > img {
+  object-position: 10% 50%;
+}
+#info-all-Characters > div:nth-child(33) > div > img,
+#info-all-Characters > div:nth-child(20) > div > img {
+  object-position: 70% 50%;
+}
+#info-all-Characters > div:nth-child(45) > div > img {
+  object-position: 10% 50%;
+}
+
+#info-all-Characters > div:nth-child(26) > div > img {
+  object-position: 36% 28%;
+}
+
+#Yara > div:nth-of-type(3) > img,
+#Brienne > div:nth-of-type(3) > img {
+  object-position: 36% 26%;
+}
+
+#Cersei > div:nth-of-type(3) > img {
+  object-position: 24% 56%;
+}
+#Gendry > div:nth-of-type(3) > img,
+#Varys > div:nth-of-type(3) > img {
+  object-position: 65% 26%;
+}
+#div-img > div#Oberyn > .shield-haus {
+  width: 250px;
+  height: 250px;
+}
+#Olenna > div:nth-of-type(3) > img,
+#Daario > div:nth-of-type(3) > img,
+#Shae > div:nth-of-type(3) > img {
+  object-position: 75% 26%;
+}
+
+/* layout von div-filtered  */
+#div-img {
+  justify-content: start;
+
+  color: whitesmoke;
+  position: relative;
+
+  background: url('https://cdnb.artstation.com/p/assets/images/images/019/641/575/large/lisa-graf-highresscreenshot04.jpg?1564406298')
+    top / 100% 100% no-repeat;
+}
+
+#div-img > div > div {
+  width: 40%;
+  height: fit-content;
+  align-self: center;
+  padding: var(--rtc-padding-xs);
+}
+#div-img > div > div > img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  transition: all 1s;
+  object-position: 50% 20%;
+}
+
+.single-filtered {
+  gap: var(--rtc-gap-xs);
+  position: relative;
+}
+#div-img > .single-filtered > h2 {
+  left: 52%;
+  font-size: 2rem;
+  position: absolute;
+}
+#info-character {
+  gap: var(--rtc-gap-l);
+  margin-left: 2rem;
+  margin-top: 5rem;
+}
+#info-character > p:last-child {
+  font-size: 1.5rem;
+}
+#info-character:has(p, h3, span) {
+  font-size: 1.4rem;
+}
+
+.single-haus {
+  width: 14rem;
+  height: 14rem;
+  top: 5rem;
+  right: 2rem;
+  z-index: 1;
+}
+#div-img > .single-haus > img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+#div-img > .single-haus > img:hover {
+  filter: drop-shadow(3px 5px 15px #c4c4c4);
+}
+.single-haus:hover:has(img) {
+  filter: drop-shadow(3px 5px 15px #c4c4c4);
+}
+
+#div-img > div.single-filtered-houses > .shield-haus {
+  width: 200px;
+  height: 200px;
+  padding: var(--rtc-padding-s);
+  left: 1%;
+  top: 5px;
+}
+#div-img > div.single-filtered-houses > .shield-haus > img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.single-filtered-houses:first-child {
+  justify-content: space-evenly;
+}
+#div-img > .single-filtered-houses {
+  justify-content: space-evenly;
+}
+#div-img > .single-filtered-houses > div.info-div-houses {
+  gap: var(--rtc-gap-s);
+  align-self: flex-end;
+}
+.single-filtered-houses > h2 {
+  margin-right: 2rem;
+  text-align: center;
+}
+.single-filtered-houses > .info-div-houses > p:last-child {
+  padding: var(--rtc-padding-s);
+}
+#div-img > div > div > img:hover {
+  filter: drop-shadow(3px 5px 15px #c4c4c4);
+}
+
+#div-img > .single-filtered-houses > div:nth-child(1) > img:hover {
+  filter: drop-shadow(3px 5px 15px #c4c4c4);
+}
+#div-img > .single-filtered-houses:nth-child(even) > div:nth-of-type(3) > img {
+  position: relative;
+  right: 100px;
+}
+.single-filtered-houses:nth-child(even) > h2 {
+  margin-right: 7.57rem;
+}
+
+#div-img > .single-filtered > .single-haus {
+  width: 150px;
+  height: 150px;
+  top: 0;
+  right: 10px;
+}
+#div-img > .single-filtered > .single-haus > img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+#div-img > .single-filtered > .single-haus > img:hover {
+  filter: drop-shadow(3px 5px 15px #c4c4c4);
+}
+#div-img > .single-filtered {
+  padding: var(--rtc-padding-s);
+}
+
+footer {
+  border-top: 2px solid black;
+}
+#footer-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--rtc-gap-s);
+
+  padding: var(--rtc-padding-s);
+}
+#footer-info li,
+#footer-info > li > a {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  gap: var(--rtc-gap-m);
+}
+#footer-info li::after,
+#footer-info > li > a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  background-color: antiquewhite;
+  left: 0;
+  height: 2.5px;
+  width: 0px;
+  transition: all 0.2s ease-in-out;
+}
+#footer-info li:hover::after,
+#footer-info > li:hover::after {
+  background-color: black;
+  width: 100%;
+}
+
+@media screen and (max-width: 1347px) {
+  #div-img > .single-filtered-houses > div.info-div-houses {
+    position: relative;
+    left: 120px;
+  }
+}
+
+@media screen and (max-width: 1269px) {
+  #info-character > *:not(p:last-of-type) {
+    position: relative;
+    right: 100px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  #info-character > *:not(p:last-of-type) {
+    position: relative;
+    right: 0;
+    z-index: 2;
+  }
+  .single-haus {
+    right: 7%;
+    opacity: 0.6;
+    z-index: 1;
+  }
+
+  #div-img > .single-filtered-houses > div.info-div-houses {
+    margin-top: 300px;
+    left: 0;
+  }
+  #div-img > div > div {
+    width: 100%;
+  }
+  #div-img > div.single-filtered-houses > div:nth-of-type(3) {
+    position: relative;
+    margin-top: 1rem;
+    min-width: 300px;
+  }
+  #div-img > div#Viserys > div:nth-of-type(3) > img {
+    object-position: 40% 50%;
+  }
+}
+
+@media screen and (max-width: 885px) {
+  #container-selector {
+    background-position: 200rem 130%;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  #div-img > .single-filtered > #info-character {
+    height: fit-content;
+  }
+  #info-character > *:not(p:last-of-type) {
+    position: relative;
+    right: 8rem;
+    z-index: 2;
+  }
+  #div-img > .single-haus {
+    right: 5%;
+    opacity: 1;
+    top: 55%;
+    width: 200px;
+    height: 200px;
+  }
+
+  #div-img > .single-filtered {
+    flex-wrap: wrap;
+  }
+  #div-img > .single-filtered > h2 {
+    left: 30%;
+  }
+  #div-img > div > div {
+    margin-top: 3rem;
+    min-width: 230px;
+    height: 500px;
+  }
+  #div-img > div > div > img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .single-haus {
+    top: 50%;
+    right: 3%;
+    opacity: 0.6;
+    z-index: 1;
+  }
+  #div-img > .single-filtered > h2 {
+    text-align: center;
+  }
+  .single-filtered-houses:nth-child(odd) > h2 {
+    position: absolute;
+    left: 60%;
+  }
+  .single-filtered-houses:nth-child(even) > h2 {
+    position: absolute;
+    left: 68%;
+  }
+  #div-img
+    > .single-filtered-houses:nth-child(even)
+    > div:nth-of-type(3)
+    > img {
+    right: 24px;
+  }
+
+  header {
+    background: url(./assets/img/throes\ copia.jpg) top / 1200px 202px;
+
+    background-position: 0.1rem 50%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  #container-selector > div {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #container-selector > div > input {
+    width: 70%;
+  }
+  #container-selector > div > select {
+    width: 50%;
+  }
+  #div-img > div.single-filtered-houses > .shield-haus {
+    width: 200px;
+    height: 200px;
+    left: 5%;
+  }
+  .single-filtered-houses > h2:first-child {
+    left: 61%;
+  }
+  #div-img > .single-haus {
+    right: 5%;
+    opacity: 1;
+    top: 50%;
+  }
+  #div-img > .single-filtered-houses > h2 {
+    width: 170px;
+    height: fit-content;
+    position: absolute;
+    top: 77px;
+    left: 66%;
+  }
+  #div-img
+    > .single-filtered-houses:nth-child(even)
+    > div:nth-of-type(3)
+    > img {
+    right: 0px;
+  }
+
+  .single-filtered-houses {
+    flex-wrap: wrap-reverse;
+  }
+  #div-img > div.single-filtered-houses > div:nth-of-type(3) {
+    margin-top: 13rem;
+  }
+  #div-img > .single-filtered-houses > div.info-div-houses {
+    margin-top: 0px;
+  }
+
+  #footer-info {
+    gap: var(--rtc-gap-s);
+  }
+
+  #footer-info li,
+  #footer-info > li > a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  #div-img > .single-filtered > #info-character {
+    gap: var(--rtc-gap-xs);
+  }
+  #info-character > *:not(p:last-of-type) {
+    font-size: 1rem;
+  }
+  #info-character > p:last-child {
+    margin-top: var(--rtc-margin-s);
+    font-size: 1rem;
+  }
+  #div-img > .single-filtered > h2 {
+    left: 19%;
+  }
+  #info-character > *:not(p:last-of-type) {
+    right: 0rem;
+  }
+  #div-img > .single-haus {
+    right: 23%;
+    opacity: 0.6;
+    top: 62.4%;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  #div-img > .single-filtered > h2 {
+    left: 13%;
+  }
+  #div-img > .single-haus {
+    top: 55.3%;
+    right: 17.2%;
+  }
+  #div-img > div#Oberyn > .shield-haus {
+    left: 0%;
+    width: 200px;
+    height: 200px;
+  }
+  #div-img > #Oberyn > h2 {
+    left: 60%;
+    width: 100px;
+  }
+
+  #div-img > div.single-filtered-houses > .shield-haus {
+    top: 4%;
+    width: 140px;
+    height: 140px;
+  }
+  #div-img > div#Viserys > div:nth-of-type(3) {
+    height: fit-content;
+  }
+
+  #div-img > div#Viserys > div:nth-of-type(3) > img {
+    height: fit-content;
+    object-fit: contain;
+  }
+
+  #div-img > div#Khal > div:nth-of-type(3) > img {
+    object-fit: contain;
+    height: fit-content;
+    right: 0;
+  }
+  #div-img > div#Daenerys > div:nth-of-type(3) {
+    height: 400px;
+  }
+  #div-img > div#Daenerys > div:nth-of-type(3) > img {
+    object-fit: cover;
+    height: 100%;
+  }
+  #div-img > .single-filtered-houses > h2 {
+    left: 43%;
+    margin-right: 0;
+  }
+  .single-filtered-houses > div:nth-of-type(3) > img {
+    padding: var(--rtc-padding-s);
+  }
+  #div-img > div.single-filtered-houses > div:nth-of-type(3) {
+    height: 350px;
+  }
+  #div-img
+    > .single-filtered-houses:nth-child(even)
+    > div:nth-of-type(3)
+    > img {
+    height: 100%;
+  }
+  #div-img > .single-filtered-houses:nth-child(odd) > div:nth-of-type(3) > img {
+    height: 100%;
+  }
+  #container-selector h2 {
+    font-size: 1.7rem;
+    width: 277px;
+  }
+  #container-selector > div h2 {
+    font-size: 1.4rem;
+    min-width: 95px;
+    width: fit-content;
+  }
+  #input-search {
+    justify-content: space-between;
+  }
+  #input-search > input {
+    padding: 0.2rem 0.5rem;
+    width: 80%;
+  }
+  #input-search > button {
+    padding: 0.5rem 0.5rem;
+  }
+}
+@media screen and (max-width: 310px) {
+  header {
+    background: url(./assets/img/throes\ copia.jpg) top / 1107px 202px;
+    background-position: 0.1rem 50%;
+  }
+}

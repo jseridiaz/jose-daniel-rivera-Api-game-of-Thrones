@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="./index.js" defer></script>
+    <title>Game of Thrones</title>
+  </head>
+  <body>
+    <header>
+      <!-- <h1 class="flex-container">All Characters of Game of thrones</h1> -->
+    </header>
+    <main>
+      <article id="container-selector" class="flex-container-column">
+        <h2>Choose your favourite Character or Haus</h2>
+        <div class="flex-container">
+          <select id="character-list"></select
+          ><select id="house-list"></select>
+        </div>
+        <div id="input-search" class="flex-container">
+          <h2>Look for the name</h2>
+          <input type="text" />
+          <button type="submit">Search</button>
+        </div>
+        <button>Clear filter</button>
+      </article>
+
+      <div id="div-img" class="flex-container wrap"></div>
+      <article id="info-all-Characters" class="flex-container"></article>
+    </main>
+    <footer>
+      <ul id="footer-info">
+        <li><a href="#">To start</a></li>
+        <li>All right reserved <b>&copy;</b> José Daniel Rivera Díaz</li>
+        <li>Contact me to jseridiaz@gmail.com</li>
+      </ul>
+    </footer>
+  </body>
+</html>
